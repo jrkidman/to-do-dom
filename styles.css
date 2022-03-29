@@ -1,0 +1,37 @@
+.form{
+    display:flex;
+
+}
+
+.buttons{
+    display:flex;
+    flex-direction: row;
+}
+#add{
+    background-color: darksalmon;
+    margin: 5px;
+    padding: 5px;
+}
+
+#remove-item{
+    background-color: rgb(99, 136, 36);
+    margin: 5px;
+    padding: 5px;
+
+}
+
+#remove-all{
+    background-color: darkslategray;
+    margin: 5px;
+    padding: 5px;
+}
+
+#added{
+    border: 2px solid black;
+    height: 300px;
+    width: 500px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+
+}
