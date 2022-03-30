@@ -1,6 +1,10 @@
+
+body{
+    background-color: rgba(172, 173, 175, 0.877);
+}
+
 .form{
     display:flex;
-
 }
 
 .buttons{
@@ -17,7 +21,6 @@
     background-color: rgb(99, 136, 36);
     margin: 5px;
     padding: 5px;
-
 }
 
 #remove-all{
@@ -33,5 +36,4 @@
     margin: 5px;
     padding: 5px;
     display: flex;
-
 }
