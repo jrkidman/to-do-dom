@@ -9,11 +9,10 @@ let todoList = document.querySelector("#todo-list");
 
 addButton.addEventListener("click", function (event) {
     event.preventDefault();
-
     let str = userInput.value;
     let newDiv = document.createElement("div");
     newDiv.innerHTML = str;
-    console.log(str);
+    // console.log(str);
 
     newDiv.addEventListener("click", function () {
         if (newDiv.style.textDecoration === "") {
@@ -32,28 +31,20 @@ addButton.addEventListener("click", function (event) {
 
 
 let todoListItems = document.querySelectorAll("#todo-list div");
+removeItemButton.addEventListener("click", function (event) {
+    event.preventDefault();
+    todoListItems = document.querySelectorAll("#todo-list div");
 
-
-    removeItemButton.addEventListener("click", function (event) {
-        event.preventDefault();
-        console.log("POS");
-        todoListItems = document.querySelectorAll("#todo-list div");
-
-        for (let i = 0; i < todoListItems.length; i++) {
-            console.log(todoListItems[i]);
-
+    for (let i = 0; i < todoListItems.length; i++) {
+        // console.log(todoListItems[i]);
         if (todoListItems[i].style.textDecoration === "line-through") {
             todoListItems[i].remove();
         }
     }
-    })
-
-
+})
 
 
 removeAllButton.addEventListener("click", function () {
-    // console.log("remove all button clicked")
-
     for (let i = 0; i < todoList.length; i++) {
         let items = todoList[i];
         items.remove();
